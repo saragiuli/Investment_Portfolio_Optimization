@@ -165,7 +165,7 @@ sns.heatmap(ret_df.corr(), annot=True, cmap='coolwarm', center=0, ax=ax2,
 ax2.set_title("Correlation Matrix between Stocks", fontsize=14, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('stock_analysis.png', dpi=300, bbox_inches='tight')
+plt.savefig('images/stock_analysis.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # ==================== PART 2: EFFICIENT FRONTIER ====================
@@ -221,7 +221,7 @@ plt.title('Efficient Frontier - 5000 Random Portfolios', fontsize=14, fontweight
 plt.legend(loc='best')
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('efficient_frontier.png', dpi=300, bbox_inches='tight')
+plt.savefig('images/efficient_frontier.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # ==================== PART 3: MACHINE LEARNING ====================
@@ -392,7 +392,7 @@ axes[1, 1].set_title('Top 10 Feature Importance (Random Forest)', fontsize=12, f
 axes[1, 1].set_xlabel('Importance')
 
 plt.tight_layout()
-plt.savefig('ml_results.png', dpi=300, bbox_inches='tight')
+plt.savefig('images/ml_results.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Final chart with drawdown
@@ -423,13 +423,13 @@ ax2.fill_between(backtest_df.index, 0,
                   for i in range(len(backtest_df))], alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('performance_drawdown.png', dpi=300, bbox_inches='tight')
+plt.savefig('images/performance_drawdown.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 print("\n" + "="*80)
 print("✓ ANALYSIS COMPLETED!")
 print("="*80)
-print("\nFiles saved:")
+print("\nFiles saved in images/ folder:")
 print("  - stock_analysis.png")
 print("  - efficient_frontier.png")
 print("  - ml_results.png")
