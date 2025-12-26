@@ -81,10 +81,14 @@ Make sure you have Python 3.11+ installed on your system.
 
 ## 📸 Sample Results
 
-[Aggiungi qui screenshot delle tue visualizzazioni]
+Portfolio Efficient Frontier
 
 ![Portfolio Efficient Frontier](images/efficient_frontier.png)
+
+Main results of Risk-Return analysis
 ![Risk-Return Analysis](images/ml_results.png)
+
+Stock analysis
 ![stock_analysis](images/stock_analysis.png)
 
 ---
@@ -105,4 +109,5 @@ Feel free to fork this project and submit pull requests. For major changes, plea
 
 ## 📚 References
 
-- Markowitz, H. (1952). Portfolio Selection. *The Journal of Finance*
+This project was inspired by the course "Python for Finance and Data Science" by Instructor Jose Portilla on Udemy.
+Link: https://www.udemy.com/course/python-for-finance-and-data-science/
