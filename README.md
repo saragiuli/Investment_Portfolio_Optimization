@@ -155,15 +155,19 @@ The backtesting reveals:
 ## 📁 Project Structure
 
 ```
-├── opt_portfolio.py              # Main script where it's store and computerd the optimization process
-├── yfinance_change:2025.py              # Code that remember the changes of the last year (main in pandas visualization)
+├── opt_portfolio.py              # Main script where it's stored and computed the optimization process
+├── yfinance_change:2025.py              # Code that remembers the changes of the last year (main in pandas visualization)
 ├── images/                 # Visualization outputs and results
 │   ├── efficient_frontier.png
 │   ├── ml_results.png
 │   ├── performance_drawdown.png
 │   └── stock_analysis.png
+<<<<<<< HEAD
 └── README.md
 
+=======
+└── README.md 
+>>>>>>> 73f0c841c65527eceba536befdffd16304145fcc
 ```
 ### Prerequisites
 
