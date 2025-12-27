@@ -254,7 +254,7 @@ Feel free to fork this project and submit pull requests. For major changes, plea
 
 ## 👤 Author
 
-**[Il tuo nome]**
+**Sara Giuli**
 - GitHub: [@saragiuli](https://github.com/saragiuli)
 
 ---
