@@ -106,7 +106,7 @@ Finds a linear relationship between features and the probability of the market g
 - When interpretability is important
 - When you have limited data
 
-** Model 2: Random Forest**
+**Model 2: Random Forest**
 
 An ensemble of decision trees that votes on the final prediction.
 
