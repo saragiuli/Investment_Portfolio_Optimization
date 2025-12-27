@@ -230,25 +230,25 @@ print("\n" + "="*80)
 print("3. MACHINE LEARNING - MARKET DIRECTION PREDICTION")
 print("="*80)
 
-# Create equally-weighted portfolio
+# Equally-weighted portfolio
 ptf_returns = ret_df.mean(axis=1)
 ptf_cum = (ptf_returns + 1).cumprod() - 1
 
-# Prepare data for ML
+# Data for ML
 ml_df = pd.DataFrame({
     'cum_ret': ptf_cum,
     'ret': ptf_returns
 })
 
-# Create target: market direction (1 = up, 0 = down)
+# Target: market direction (1 = up, 0 = down)
 ml_df['direction'] = np.where(ml_df['ret'] > 0, 1, 0)
 
-# Create advanced features
-print("\n🔧 Creating features for ML...")
+# Advanced features
+print("\n Features for ML...")
 ml_df = create_ml_features(ml_df, lags=5)
 ml_df.dropna(inplace=True)
 
-# Select features
+# Features
 feature_cols = [col for col in ml_df.columns if col not in ['cum_ret', 'ret', 'direction']]
 X = ml_df[feature_cols]
 y = ml_df['direction']
@@ -264,8 +264,8 @@ split_idx = int(len(X) * 0.7)
 X_train, X_test = X[:split_idx], X[split_idx:]
 y_train, y_test = y[:split_idx], y[split_idx:]
 
-print(f"\n📊 Train set: {len(X_train)} samples")
-print(f"📊 Test set: {len(X_test)} samples")
+print(f"\n Train set: {len(X_train)} samples")
+print(f" Test set: {len(X_test)} samples")
 
 # ==================== MODEL 1: LOGISTIC REGRESSION ====================
 
@@ -323,7 +323,7 @@ print("\n" + "="*80)
 print("4. TRADING STRATEGY BACKTESTING")
 print("="*80)
 
-# Prepare dataframe for backtesting
+# Dataframe for backtesting
 backtest_df = pd.DataFrame(index=X_test.index)
 backtest_df['ret'] = ml_df.loc[X_test.index, 'ret']
 backtest_df['lr_signal'] = lr_pred_test
