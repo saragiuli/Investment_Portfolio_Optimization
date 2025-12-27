@@ -88,10 +88,10 @@ The target is binary:
 - **Time-series split**: Maintains temporal order (no shuffle) to prevent data leakage
 
 
-###  🤖 Machine Learning Models
+##  🤖 Machine Learning Models
 
 
-## Model 1: Logistic Regression
+**Model 1: Logistic Regression**
 
 A statistical model that predicts probabilities of binary outcomes.
 
@@ -106,7 +106,7 @@ Finds a linear relationship between features and the probability of the market g
 - When interpretability is important
 - When you have limited data
 
-## Model 2: Random Forest
+** Model 2: Random Forest**
 
 An ensemble of decision trees that votes on the final prediction.
 
