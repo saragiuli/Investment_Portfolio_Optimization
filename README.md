@@ -165,12 +165,8 @@ The backtesting reveals:
 │   ├── ml_results.png
 │   ├── performance_drawdown.png
 │   └── stock_analysis.png
-<<<<<<< HEAD
 └── README.md
 
-=======
-└── README.md 
->>>>>>> 73f0c841c65527eceba536befdffd16304145fcc
 ```
 ### Prerequisites
 
