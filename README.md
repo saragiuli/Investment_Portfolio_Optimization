@@ -23,8 +23,7 @@ Assets analyzed:
 - **MMM** (3M Company)
 - **KO** (The Coca-Cola Company)
 
-Data is downloaded from January 1, 2015, using 'yfinance' library, which retrieves adjusted closing price from Yahoo Finance 
----
+Data is downloaded from January 1, 2015, using `yfinance` library, which retrieves adjusted closing price from Yahoo Finance 
 
 
 ---
@@ -89,10 +88,12 @@ The target is binary:
 - **Time-series split**: Maintains temporal order (no shuffle) to prevent data leakage
 
 
-##  🤖 Machine Learning Models
+###  🤖 Machine Learning Models
 
 
-**Model 1:Logistic Regression**, statistical model that predicts probabilities of binary outcomes.
+## Model 1: Logistic Regression
+
+A statistical model that predicts probabilities of binary outcomes.
 
 **How it works**:
 
@@ -105,7 +106,9 @@ Finds a linear relationship between features and the probability of the market g
 - When interpretability is important
 - When you have limited data
 
-**Model 2: Random Forest**, an ensemble of decision trees that votes on the final prediction.
+## Model 2: Random Forest
+
+An ensemble of decision trees that votes on the final prediction.
 
 **How it works**:
 
@@ -198,10 +201,10 @@ Make sure you have Python 3.11+ installed on your system.
 
 The visualization contains:
 
-- 'stock_analysis.png' - Individual stock performance and correlation
-- 'efficient_frontier.png' - 5,000 random portfolios and optimal selections
-- 'ml_results.png' - ML model predictions and feature importance
-- 'performance_drawdown.png' - Strategy comparison and risk analysis
+- `stock_analysis.png` - Individual stock performance and correlation
+- `efficient_frontier.png` - 5,000 random portfolios and optimal selections
+- `ml_results.png` - ML model predictions and feature importance
+- `performance_drawdown.png` - Strategy comparison and risk analysis
 
 The last image contains: 
 
